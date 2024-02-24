@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfKosarkaskiKlub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfKosarkaskiKlub"
+        mc:Ignorable="d"
+        Title="KosarkaskiKlub" Height="450" Width="800">
+    <Grid>
+        
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+            AlternatingRowBackground="LightGray" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnIgrac" Content="Igrac" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnIgrac_Click"/>
+            <Button x:Name="btnSponzor" Content="Sponzor" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnSponzor_Click"/>
+            <Button x:Name="btnDres" Content="Dres" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnDres_Click"/>
+            <Button x:Name="btnArena" Content="Arena" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnArena_Click" />
+            <Button x:Name="btnTrener" Content="Trener" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnTrener_Click"/>
+            <Button x:Name="btnKosarkaskiKlub" Content="KosarkaskiKlub" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="92" Click="btnKosarkaskiKlub_Click"/>
+            <Button x:Name="btnLiga" Content="Liga" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnLiga_Click" />
+            <Button x:Name="btnTrofej" Content="Trofej" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnTrofej_Click" />
+            <Button x:Name="btnNavijac" Content="Navijac" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnNavijac_Click" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Bottom" Width="510" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="170" Click="btnDodaj_Click"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="170" Click="btnIzmeni_Click" />
+            <Button x:Name="btnObrisi" Content="Obriši" Width="170" Click="btnObrisi_Click" />
+        </StackPanel>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\TehnoCentar\Desktop\faks\pis\slika.jpg" Stretch="UniformToFill" />
+        </Grid.Background>
+    </Grid>
+</Window>
